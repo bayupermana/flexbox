@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mansonry horizontal with flexbox</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .bana-container {
+      display: flex;
+    }
+
+    .bana-mansonry-items {
+      max-width: 1200px;
+      display: flex;
+      flex-flow: row wrap;
+      margin: auto;
+    }
+
+    .bana-mansonry-item {
+      height: 250px;
+      margin: 5px;
+      width: 100%;
+      flex-grow: 1;
+    }
+
+    .bana-mansonry-item img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      filter: brightness(50%);
+    }
+
+    @media only screen and (min-width: 480px){
+      .bana-mansonry-item {
+        width: 23.33%;
+      }
+      .bana-mansonry-item:nth-child(3n+1) {
+        width: 65%;
+      }
+      .bana-mansonry-item:nth-child(3n+2) {
+        width: 100%;
+      }
+      .bana-mansonry-item:nth-child(3n+2) {
+        width: 20%;
+      }
+    } 
+
+    /* responsive */
+    @media only screen and (min-width: 768px){
+      .bana-mansonry-item:nth-child(5n+1) {
+        width: 15%;
+      }
+      .bana-mansonry-item:nth-child(5n+2) {
+        width: 40%;
+      }
+      .bana-mansonry-item:nth-child(5n+3) {
+        width: 20%;
+      }
+      .bana-mansonry-item:nth-child(5n+4) {
+        width: 30%;
+      }
+      .bana-mansonry-item:nth-child(5n+5) {
+        width: 35%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bana-container">
+    <div class="bana-mansonry-items">
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=1" alt="1">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=2" alt="2">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=3" alt="3">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=4" alt="4">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=5" alt="5">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=6" alt="6">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=7" alt="7">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=8" alt="8">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=9" alt="9">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=10" alt="10">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=11" alt="11">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=12" alt="12">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=13" alt="13">
+      </div>
+      <div class="bana-mansonry-item">
+        <img src="https://picsum.photos/300/400?image=14" alt="14">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
